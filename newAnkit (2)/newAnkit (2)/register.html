@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<div class="devide">
+    <img src="logo.png" alt="image" id="image">
+
+            <div class="maindiv login" style="height: 100%;">
+
+                <div class="userauth" id="same">
+                  <a href="login.html"> <Button style="background-color: white;color:black"onclick="but()" id="btn1">Login</Button></a> 
+                  <a href="register.html"> <Button   onclick="butt()" id="btn2">Register</Button></a>
+                </div>
+                <form name="myForm" id="myform"  onsubmit="return validateform()">
+                    <div class="radio">
+                        <div >
+                            <input name="radio" type="radio"  name="seeker"  />
+                        <label for="seeker">Seeker</label>
+                          </div>
+                        <div>
+                            <input  name="radio" type="radio"  name="recruiter"  />
+                            <label for="recruiter">Recruiter</label>
+                         </div>
+                    </div>
+                    <div>
+                        <label for="name">Name</label><br />
+                        <input id="name" class="name"  name="fullName" placeholder="Enter your name" />
+                        <p id="Nerror"></p>
+                    </div>
+                  
+                    <div>
+                        <label for="number">Number</label><br />
+                        <input id="number" type="number" class="name" name="number" placeholder="Enter your number" />
+                        <p id="Aerror"></p>
+                    </div>
+                   
+                    <div>
+                        <label for="Email">Email</label><br />
+                        <input id="email" type="text" class="name" name="email" placeholder="Enter your email" />
+                        <p id="Eerror"></p>
+                    </div>
+                   
+                    <div>
+                        <label for="password">Password</label><br />
+                        <input id="password" type="password" class="name" name="password" placeholder="Enter your password" />
+                        <p id="Merror"></p>
+                    </div>   
+                    <div class="check">
+                        <input type="checkbox" id="check" name="check" value="t&c"/>
+                        <label for="check" id="myBtn">I agree to Terms and Condition</label>
+                    </div>
+                    <div class="formbutton">
+                        <button class="btn" id = "reg">Register</button>
+                        <div>
+                            <label for="option">OR</label>
+                            <ul>
+                                <li><a href="www.facebook.com" class="fa fa-facebook" style="text-decoration: none;"></a></li>
+                                <li><a href="www.google.com" class="fa fa-google" style="text-decoration: none;"></a></li>
+                                <li><a href="www.twitter.com" class="fa fa-twitter" style="text-decoration: none;"></a></li>
+                               </ul>
+                        </div>    
+                    </div>
+                </form>
+              
+            </div>
+            <div  class="headimg">
+                <img src="illustration-discuss.svg" alt="">
+            </div>
+        </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Terms & Condition.</p>
+                  <ol>
+                      <li> Introduction
+                          <p>These Website Standard Terms and Conditions (these “Terms” or these “Website Standard Terms and Conditions”) contained herein on this webpage, shall govern your use of this website, including all pages within this website (collectively referred to herein below as this “Website”). These Terms apply in full force and effect to your use of this Website and by using this Website, you expressly accept all terms and conditions contained herein in full. You must not use this Website, if you have any objection to any of these Website Standard Terms and Conditions.
+                            This Website is not for use by any minors (defined as those who are not at least 18 years of age), and you must not use this Website if you a minor.</p>
+                      </li>
+                      <li>Intellectual Property Rights
+                        <p>Other than content you own, which you may have opted to include on this Website, under these Terms,[Connection Media] and/or its licensors own all rights to the intellectual property and material contained in this Website, and all such rights are reserved. You are granted a limited license only, subject to the restrictions provided in these Terms, for purposes of viewing the material contained on this Website.</p></li>
+                        <li> Introduction
+                            <p>These Website Standard Terms and Conditions (these “Terms” or these “Website Standard Terms and Conditions”) contained herein on this webpage, shall govern your use of this website, including all pages within this website (collectively referred to herein below as this “Website”). These Terms apply in full force and effect to your use of this Website and by using this Website, you expressly accept all terms and conditions contained herein in full. You must not use this Website, if you have any objection to any of these Website Standard Terms and Conditions.
+                              This Website is not for use by any minors (defined as those who are not at least 18 years of age), and you must not use this Website if you a minor.</p>
+                        </li>
+                       <li> Introduction
+                          <p>These Website Standard Terms and Conditions (these “Terms” or these “Website Standard Terms and Conditions”) contained herein on this webpage, shall govern your use of this website, including all pages within this website (collectively referred to herein below as this “Website”). These Terms apply in full force and effect to your use of this Website and by using this Website, you expressly accept all terms and conditions contained herein in full. You must not use this Website, if you have any objection to any of these Website Standard Terms and Conditions.
+                            This Website is not for use by any minors (defined as those who are not at least 18 years of age), and you must not use this Website if you a minor.</p>
+                      </li>
+                       <li> Introduction
+                          <p>These Website Standard Terms and Conditions (these “Terms” or these “Website Standard Terms and Conditions”) contained herein on this webpage, shall govern your use of this website, including all pages within this website (collectively referred to herein below as this “Website”). These Terms apply in full force and effect to your use of this Website and by using this Website, you expressly accept all terms and conditions contained herein in full. You must not use this Website, if you have any objection to any of these Website Standard Terms and Conditions.
+                            This Website is not for use by any minors (defined as those who are not at least 18 years of age), and you must not use this Website if you a minor.</p>
+                      </li>
+                     
+                  </ol>
+                </div>
+              
+              </div>
+        <script src="register.js"></script>
+   
+  
+    
+</body>
+
+</html>

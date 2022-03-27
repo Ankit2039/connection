@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+    <div class="devide">
+      <img src="logo.png" alt="image" id="image">
+
+        <div class="maindiv login">
+
+            <div class="userauth" id="same">
+              <a href="login.html"> <Button onclick="but()" id="btn1">Login</Button></a> 
+              <a href="register.html"> <Button style="background-color: white;color:black" onclick="butt()" id="btn2">Register</Button></a>
+            </div>
+            <form name="myForm" id="myform" onsubmit="return validateform()" >
+                <div>
+                    <label for="Email">Email</label><br />
+                    <input id="email" type="email" name="email" placeholder="Enter your email" />
+                </div>
+                <p id="Eerror"></p>
+                <div>
+                    <label for="password">Password</label><br />
+                    <input id="password" type="password" name="password" placeholder="Enter your password" />
+                    <a href="forget.html"><p class="forgot">Forgot password</p></a>
+                </div>
+                <p id="Merror"></p>
+
+                <div class="formbutton">
+                    <button class="btn">Login</button>
+                    <div>
+                        <label for="option">OR</label>
+                        <ul>
+                            <li><a href="www.facebook.com" class="fa fa-facebook" style="text-decoration: none;"></a></li>
+                            <li><a href="www.google.com" class="fa fa-google" style="text-decoration: none;"></a></li>
+                            <li><a href="www.twitter.com" class="fa fa-twitter" style="text-decoration: none;"></a></li>
+                       </ul>
+                    </div>
+            
+
+                </div>
+            </form>
+        </div>
+        <div  class="headimg">
+            <img src="illustration-discuss.svg" alt="">
+        </div>
+    </div>
+        <script src="login.js"></script>
+   
+</body>
+
+</html>
